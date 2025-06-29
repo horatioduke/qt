@@ -10,16 +10,19 @@ content:
       - name: title
         label: Website Title
         type: string
-        description: This is where the website name goes. It should usually read 'Quiet Tongues'.
+        description: This should usually read 'Quiet Tongues'.
       - name: hero-header
         label: Hero Header
         type: string
+        description: The name of the band also usually goes here.
       - name: hero-subtitle
         label: Hero Subtitle
         type: string
+        description: A space for crucial information, like '''She''s Velvet'' Out Now!'
       - name: mailchimp-embed-code
         label: Mailchimp Embed Code
         type: code
+        description: Mailchimp embed code goes here. Unless Mailchimp change something, just leave this as-is.
         options:
           language: html
       - name: live-shows-header
@@ -29,6 +32,7 @@ content:
       - name: live-shows-block
         label: Live Shows Block
         type: block
+        description: This makes the live events feed work. Just select one option and ignore the small bit of code in the box.
         list: true
         blocks:
           - name: live-shows-block
@@ -41,6 +45,11 @@ content:
       - name: band-bio-copy
         label: Band Bio Copy
         type: rich-text
+      - name: footer-info
+        label: Footer Info
+        type: code
+        options:
+          language: html
 
   - name: live_shows
     label: Live Shows
@@ -50,12 +59,27 @@ content:
       - name: date
         label: Date
         type: date
+        description: When is the event taking place?
       - name: location
         label: Location
         type: string
+        description: Where is the event taking place? Best to keep this brief.
       - name: ticket_url
         label: Ticket Link
         type: string
+        description: Should start with https://
+
+  - name: tour-archive
+    label: Tour Archive
+    path: content/tour-archive
+    type: collection
+    fields:
+        - name: tour-archive-title
+          label: Tour Archive Title
+          type: string
+        - name: tour-archive-text
+          label: Tour Archive Text
+          type: rich-text
 
   - name: epk
     label: EPK
@@ -74,6 +98,152 @@ content:
       - name: epk-band-bio
         label: EPK Band Bio
         type: rich-text
+        
+      - name: singles-header-text
+        label: Singles Header Text
+        type: string
+      - name: single-1-title
+        label: Single 1 Title
+        type: string
+      - name: single-1-release-date
+        label: Single 1 Release Date
+        type: date
+      - name: single-1-embed-code
+        label: Single 1 Embed Code
+        type: code
+        options:
+          language: html
+      - name: single-2-title
+        label: Single 2 Title
+        type: string
+      - name: single-2-release-date
+        label: Single 2 Release Date
+        type: date
+      - name: single-2-embed-code
+        label: Single 2 Embed Code
+        type: code
+        options:
+          language: html
+      - name: single-3-title
+        label: Single 3 Title
+        type: string
+      - name: single-3-release-date
+        label: Single 3 Release Date
+        type: date
+      - name: single-3-embed-code
+        label: Single 3 Embed Code
+        type: code
+        options:
+          language: html
+
+      - name: scheduled-releases-header
+        label: Scheduled Releases Header
+        type: string
+      - name: scheduled-releases-text
+        label: Scheduled Releases Text
+        type: rich-text
+
+      - name: music-videos-header
+        label: Music Videos Header
+        type: string
+        
+      - name: music-video-1-header
+        label: Music Video 1 Header
+        type: string
+      - name: music-video-1-release-date
+        label: Music Video 1 Release Date
+        type: date
+      - name: music-video-1-link
+        label: Music Video 1 Link
+      - name: music-video-2-header
+        label: Music Video 2 Header
+        type: string
+      - name: music-video-2-release-date
+        label: Music Video 2 Release Date
+        type: date
+      - name: music-video-2-link
+        label: Music Video 2 Link
+      - name: music-video-3-header
+        label: Music Video 3 Header
+        type: string
+      - name: music-video-3-release-date
+        label: Music Video 3 Release Date
+        type: date
+      - name: music-video-3-link
+        label: Music Video 3 Link
+
+      - name: socials-header
+        label: Socials Header
+        type: string
+      - name: socials-text
+        label: socials-text
+        type: rich-text
+
+      - name: contact-management-header
+        label: Contact & Management Header
+        type: string
+      - name: contact-management-body
+        label: Contact & Management body
+        type: rich-text
+
+      - name: tour-archive-header
+        label: Tour Archive Header
+        type: string
+      - name: tour-archive-body
+        label: Tour Archive Body Text
+        type: rich-text
+
+      - name: press-coverage-header
+        label: Press Coverage Header
+        type: string
+      - name: press-coverage-body
+        label: Press Coverage Body Text
+        type: rich-text
+
+      - name: gallery-header
+        label: Gallery Header
+        type: string
+      - name: gallery-body
+        label: Gallery Body Text
+        type: rich-text
+      
+      - name: gallery-live-header
+        label: Gallery Live Header
+        type: string
+      - name: gallery-live
+        label: Live Image Gallery
+        type: image
+        options:
+          multiple:
+            max: 4
+      - name: gallery-promotional-header
+        label: Gallery Promotional Header
+        type: string
+      - name: gallery-promotional
+        label: Promotional Image Gallery
+        type: image
+        options:
+          multiple:
+            max: 4
+      - name: gallery-band-members-header
+        label: Gallery Band Members Header
+        type: string
+      - name: gallery-band-members
+        label: Band Members Image Gallery
+        type: image
+        options:
+          multiple:
+            max: 4
+      - name: gallery-branding-header
+        label: Gallery Branding Header
+        type: string
+      - name: gallery-branding
+        label: Branding Image Gallery
+        type: image
+        options:
+          multiple:
+            max: 4
+      
 
 components:
   live-shows-block:
