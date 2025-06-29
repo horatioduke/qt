@@ -1,13 +1,5 @@
 media: media
 
-backend:
-  name: github
-  repo: your-username/your-repo
-  branch: main
-
-media_folder: static/uploads
-public_folder: /static/uploads
-
 collections:
   - name: "homepage"
     label: "Homepage"
