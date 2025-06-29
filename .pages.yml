@@ -25,8 +25,8 @@ content:
         label: Live Shows Header
         type: string
         
-      - name: blocks
-        label: Page Blocks
+      - name: live-shows-block
+        label: Live Shows Block
         type: block
         list: true
         blocks:
