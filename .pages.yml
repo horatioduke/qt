@@ -1,1 +1,68 @@
 media: media
+
+backend:
+  name: github
+  repo: your-username/your-repo
+  branch: main
+
+media_folder: static/uploads
+public_folder: /static/uploads
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "content/home/index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  - name: "epk"
+    label: "Press / EPK"
+    files:
+      - label: "EPK Page"
+        name: "epk"
+        file: "content/epk/epk.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Bio"
+            name: "bio"
+            widget: "markdown"
+          - label: "Gallery"
+            name: "images"
+            widget: "list"
+            field:
+              label: "Image"
+              name: "image"
+              widget: "image"
+
+  - name: "tour-history"
+    label: "Tour History"
+    folder: "content/tours"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Venue"
+        name: "venue"
+        widget: "string"
+      - label: "Location"
+        name: "location"
+        widget: "string"
+      - label: "Notes"
+        name: "notes"
+        widget: "text"
+        required: false
