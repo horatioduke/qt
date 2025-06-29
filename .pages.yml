@@ -87,7 +87,7 @@ content:
     type: collection
     fields:
       - name: title
-        label: Website Title
+        label: Page Title
         type: string
       - name: epk-header
         label: EPK Header
