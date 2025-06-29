@@ -1,2 +1,11 @@
 media: media
 
+content:
+  - name: homepage
+    label: Homepage
+    path: src/_homepage
+    type: collection
+    fields:
+      - name: title
+      label: Website title
+      type: string
