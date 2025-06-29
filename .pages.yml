@@ -7,11 +7,11 @@ content:
     type: collection
     fields:
       - name: title
-        label: Website title
+        label: Website Title
         type: string
-      - name: hero-text
-        label: Hero Text
+      - name: hero-header
+        label: Hero Header
         type: string
       - name: hero-subtitle
-        label: Hero subtitle
+        label: Hero Subtitle
         type: string
