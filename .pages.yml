@@ -3,9 +3,9 @@ media: media
 content:
   - name: homepage
     label: Homepage
-    path: src/_homepage
+    path: src/homepage
     type: collection
     fields:
       - name: title
-      label: Website title
-      type: string
+        label: Website title
+        type: string
