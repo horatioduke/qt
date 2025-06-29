@@ -9,3 +9,9 @@ content:
       - name: title
         label: Website title
         type: string
+      - name: hero-text
+        label: Hero Text
+        type: string
+      - name: hero-subtitle
+        label: Hero subtitle
+        type: string
