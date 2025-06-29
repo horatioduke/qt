@@ -56,6 +56,23 @@ content:
         label: Ticket Link
         type: string
 
+  - name: epk
+    label: EPK
+    path: content/epk
+    type: collection
+    fields:
+      - name: title
+        label: Website Title
+        type: string
+      - name: epk-header
+        label: EPK Header
+        type: string
+      - name: epk-band-bio-header
+        label: EPK Band Bio Header
+        type: string
+      - name: epk-band-bio
+        label: EPK Band Bio
+        type: rich-text
 
 components:
   live-shows-block:
