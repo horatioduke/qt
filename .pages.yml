@@ -10,6 +10,7 @@ content:
       - name: title
         label: Website Title
         type: string
+        description: This is where the website name goes. It should usually read 'Quiet Tongues'.
       - name: hero-header
         label: Hero Header
         type: string
