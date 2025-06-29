@@ -1,9 +1,10 @@
 media: media
 
 content:
+
   - name: homepage
     label: Homepage
-    path: src/homepage
+    path: content/homepage
     type: collection
     fields:
       - name: title
@@ -20,17 +21,43 @@ content:
         type: code
         options:
           language: html
+      - name: live-shows-header
+        label: Live Shows Header
+        type: string
+        
+      - name: blocks
+        label: Page Blocks
+        type: block
+        list: true
+        blocks:
+          - name: live-shows-block
+            label: Live Shows Block
+            component: live-shows-block
+          
+      - name: band-bio-header
+        label: Band Bio Header
+        type: string
+      - name: band-bio-copy
+        label: Band Bio Copy
+        type: rich-text
+
+  - name: live_shows
+    label: Live Shows
+    type: collection
+    path: content/live-shows
+    fields:
+      - name: date
+        label: Date
+        type: date
+      - name: location
+        label: Location
+        type: string
+      - name: ticket_url
+        label: Ticket Link
+        type: string
+
 
 components:
-  hero: # 'hero' is the component name/key
-    label: Band Bio
-    type: object
-    fields:
-      - name: header
-        label: header
-        type: text
-        required: true
-      - name: band-bio-text
-        label: Band Bio Text
-        type: rich-text
-        required: true
+  live-shows-block:
+      label: Live Shows Feed
+      fields: []
