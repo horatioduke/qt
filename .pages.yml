@@ -9,3 +9,8 @@ media:
     input: images
     output: /images
     extensions: [ image ]
+  - name: videos # Note: 'name' key is required here
+    label: Videos
+    input: videos
+    output: /videos
+    extensions: [ video ]
