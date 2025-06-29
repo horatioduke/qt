@@ -1,8 +1,8 @@
 media:
   - name: files
     label: Files
-    input: files/Documents
-    output: files/documents
+    input: Documents
+    output: documents
     categories: [ document ]
   - name: images # Note: 'name' key is required here
     label: Images
