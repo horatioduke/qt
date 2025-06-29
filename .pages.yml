@@ -15,3 +15,23 @@ content:
       - name: hero-subtitle
         label: Hero Subtitle
         type: string
+      - name: mailchimp-embed-code
+        label: Mailchimp Embed Code
+        type: code
+        options:
+          language: html
+      - 
+
+components:
+  hero: # 'hero' is the component name/key
+    label: Band Bio
+    type: object
+    fields:
+      - name: header
+        label: header
+        type: text
+        required: true
+      - name: band-bio-text
+        label: Band Bio Text
+        type: rich-text
+        required: true
