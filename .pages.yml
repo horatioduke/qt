@@ -20,7 +20,6 @@ content:
         type: code
         options:
           language: html
-      - 
 
 components:
   hero: # 'hero' is the component name/key
